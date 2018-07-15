@@ -11,7 +11,9 @@ namespace Web.App.TapaBuraco.Models
         public Buraco()
         {
             Id = Guid.NewGuid();
+            DataCadastro = new DateTime();
         }
+        [Key]
         public Guid Id { get; set; }
         [Display(Name = "Descrição: (Opcional)")]
         public string Descricao { get; set; }
@@ -22,5 +24,8 @@ namespace Web.App.TapaBuraco.Models
         public string Rua { get; set; }
         [Required(ErrorMessage = "Informe o bairro")]
         public string Bairro { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+        public string UriFoto { get; set; }
     }
 }

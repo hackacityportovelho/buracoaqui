@@ -5,3 +5,11 @@
 /.vs
 /packages
 /Web.App.TapaBuraco/bin
+
+/.dll
+/.csproj
+/.cache
+
+[Rr]elease/
+[Rr]eleases/
+[Oo]bj/
