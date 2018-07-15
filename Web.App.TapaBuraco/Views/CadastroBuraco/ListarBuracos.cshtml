@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Web.App.TapaBuraco.Models.Buraco>
+
+@{
+    ViewBag.Title = "ListarBuracos";
+    var rua = Model.First().Rua;
+    var bairro = Model.First().Bairro;
+    int contador = 1;
+    var print = true;
+}
+
+<h2>ListarBuracos</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resolvido)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (rua == item.Rua && bairro == item.Bairro)
+        {
+            if (print)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataCadastro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rua)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bairro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Longitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Latitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Resolvido)
+                    </td>
+                    <td>
+                        @Html.Label(contador.ToString())
+                    </td>
+                </tr>
+                print = false;
+            }
+            contador = contador + 1;
+        }
+        else
+        {
+            contador = new int();
+            contador = 0;
+            print = true;
+            rua = item.Rua;
+            bairro = item.Bairro;
+        }
+    }
+
+</table>

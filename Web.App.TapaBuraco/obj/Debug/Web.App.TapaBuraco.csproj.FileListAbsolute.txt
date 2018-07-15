@@ -134,3 +134,4 @@ C:\Users\Hudson-PC\Documents\Projetos Pessoais\buracoaqui\Web.App.TapaBuraco\obj
 C:\Users\Hudson-PC\Documents\Projetos Pessoais\buracoaqui\Web.App.TapaBuraco\obj\Debug\Web.App.TapaBuraco.csproj.CopyComplete
 C:\Users\Hudson-PC\Documents\Projetos Pessoais\buracoaqui\Web.App.TapaBuraco\obj\Debug\Web.App.TapaBuraco.dll
 C:\Users\Hudson-PC\Documents\Projetos Pessoais\buracoaqui\Web.App.TapaBuraco\obj\Debug\Web.App.TapaBuraco.pdb
+C:\Users\Hudson-PC\Documents\Projetos Pessoais\buracoaqui\Web.App.TapaBuraco\obj\Debug\Web.App.TapaBuraco.csprojAssemblyReference.cache
