@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity.Migrations;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -63,6 +64,36 @@ namespace Web.App.TapaBuraco.Controllers
            // var lista2 = lista.GroupBy(x => x.Bairro).ToList();
             //var lista3 = lista2;
             return View("ListarBuracos",lista);
+        }
+
+        [HttpPost]
+        public ActionResult Detalhes(string rua, string bairro)
+        {
+            var listaBuracos = db.Buraco.Where(x =>
+                x.Rua == rua && x.Bairro == bairro && x.IdEmpresa == null && x.Resolvido == false);
+
+            ViewBag.Empresa = new SelectList(db.Empresa.Where(x => x.PrestadorDeServico == false), "Id", "RazaoSocial", "Selecione");
+
+            return View("AdotarBuracos", listaBuracos);
+        }
+
+        public ActionResult AdotarBuraco(string bairro, string rua, Guid empresa)
+        {
+            var listaBuracos = db.Buraco.Where(x =>
+                x.Rua == rua && x.Bairro == bairro && x.IdEmpresa == null && x.Resolvido == false).ToList();
+
+
+            foreach (var buraco in listaBuracos)
+            {
+                buraco.IdEmpresa = empresa;
+                db.Buraco.AddOrUpdate(buraco);
+
+            }
+
+            db.SaveChanges();
+
+            ViewBag.Mensagem = "Buraco adotado com sucesso";
+            return View("Mensagem");
         }
     }
 }
