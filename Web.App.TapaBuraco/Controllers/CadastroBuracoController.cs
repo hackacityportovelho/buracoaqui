@@ -13,5 +13,27 @@ namespace Web.App.TapaBuraco.Controllers
         {
             return View();
         }
+
+        public ActionResult PreencherDados(string uriFoto)
+        {
+            
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult PreencherDados()
+        {
+
+
+            return View("Index");
+        }
+
+        [HttpPost]
+        public ActionResult ConfirmarFoto(string uriFoto)
+        {
+            ViewBag.UriImg = uriFoto;
+
+            return PartialView("_ConfirmarFoto");
+        }
     }
 }
