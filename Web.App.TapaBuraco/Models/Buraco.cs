@@ -29,5 +29,7 @@ namespace Web.App.TapaBuraco.Models
         public string Latitude { get; set; }
         public string UriFoto { get; set; }
         public bool Resolvido { get; set; }
+        public Guid? IdEmpresa { get; set; }
+
     }
 }
