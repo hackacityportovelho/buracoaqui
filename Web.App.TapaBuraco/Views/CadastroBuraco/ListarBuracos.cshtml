@@ -4,7 +4,7 @@
     ViewBag.Title = "ListarBuracos";
     var rua = Model.First().Rua;
     var bairro = Model.First().Bairro;
-    int contador = 1;
+    int contador = 0;
     var print = true;
 }
 
@@ -35,51 +35,76 @@
         </th>
         <th></th>
     </tr>
-
-    @foreach (var item in Model)
+    
+    @for (int i = 0; i < Model.Count(); i++)
     {
-        if (rua == item.Rua && bairro == item.Bairro)
+        if (i == Model.Count() - 1)
         {
-            if (print)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Descricao)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataCadastro)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Rua)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Bairro)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Longitude)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Latitude)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Resolvido)
-                    </td>
-                    <td>
-                        @Html.Label(contador.ToString())
-                    </td>
-                </tr>
-                print = false;
-            }
             contador = contador + 1;
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).DataCadastro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Rua)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Bairro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Longitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Latitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Resolvido)
+                </td>
+                <td>
+                    @*@Html.Label(contador.ToString())*@
+                </td>
+            </tr>
         }
         else
         {
-            contador = new int();
-            contador = 0;
-            print = true;
-            rua = item.Rua;
-            bairro = item.Bairro;
+            if (!(Model.ElementAt(i).Rua == Model.ElementAt(i + 1).Rua && Model.ElementAt(i).Bairro == Model.ElementAt(i + 1).Bairro))
+            {
+                contador = contador + 1;
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).DataCadastro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Rua)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Bairro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Longitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Latitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Resolvido)
+                    </td>
+                    <td>
+                        @*@Html.Label(contador.ToString())*@
+                    </td>
+                </tr>
+            }
+            else
+            {
+                contador = contador + 1;
+            }
         }
     }
-
+   
 </table>

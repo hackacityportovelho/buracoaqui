@@ -28,7 +28,7 @@ namespace Web.App.TapaBuraco.Models
         public string Bairro { get; set; }
         public string Longitude { get; set; }
         public string Latitude { get; set; }
-        public byte[] UriFoto { get; set; }
+        public string UriFoto { get; set; }
         public bool Resolvido { get; set; }
     }
 }
