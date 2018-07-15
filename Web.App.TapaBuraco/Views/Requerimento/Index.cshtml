@@ -1,0 +1,38 @@
+﻿@model IList<Web.App.TapaBuraco.Models.Empresa>
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-header">
+                Empresa: @item.RazaoSocial
+            </div>
+            <div class="card-body">
+                <p>Lista de Buracos:</p>
+                <ul class="list-unstyled">
+                    @foreach (var buraco in item.BuracoCollection)
+                    {
+                        <li class="media">
+                            <img class="mr-3" src="~/Upload/@buraco.UriFoto" width="64" height="64" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p><b>Rua:</b> @buraco.Rua</p>
+                                <p><b>Bairro: </b>@buraco.Bairro</p>
+                            </div>
+                        </li>
+                        <p></p>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="alert alert-danger" role="alert">
+        Não existe Requerimentos!
+    </div>
+}

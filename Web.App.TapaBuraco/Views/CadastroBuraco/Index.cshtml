@@ -6,31 +6,51 @@
 <script type="text/javascript" src="~/Scripts/webcam.min.js"></script>
 
 
-
-<div class="container" id="camera">
-    <div class="card" style="width: 21rem;">
+@using (Html.BeginForm("Upload", "CadastroBuraco", FormMethod.Post, new { enctype = "multipart/form-data", @id = "FormIMG" }))
+{
+    <div class="card" style="width: 18rem;">
+        <div class="img1">
+            @*<img class="card-img-top" src="@uriFoto" alt="Foto Buraco" id="foto">*@
+        </div>
         <div class="card-body">
-            <div id="minha_camera">
+            <div class="form-row">
+                <div id="fotoResult" class="form-group clearfix">
+                    <input type="file" name="file"/>
+                </div>
+                <div class="form-group clearfix">
+                    <button type="button" onclick="window.location.reload()" class="btn btn-danger">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
+                </div>
             </div>
         </div>
+    </div>
+}
 
-        <div class="card-footer">
-            <form>
-                <div class="align-items-center">
-                    <button type="button" class="btn btn-default btn-sm" onClick="bater_foto()">
-                        <i class="fa fa-camera" aria-hidden="true"></i> Bater Foto
-                    </button>
+
+@*<div class="container" id="camera">
+        <div class="card" style="width: 21rem;">
+            <div class="card-body">
+                <div id="minha_camera">
                 </div>
-            </form>
+            </div>
+
+            <div class="card-footer">
+                <form>
+                    <div class="align-items-center">
+                        <button type="button" class="btn btn-default btn-sm" onClick="bater_foto()">
+                            <i class="fa fa-camera" aria-hidden="true"></i> Bater Foto
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<div class="container" id="previa">
-    <div id="results"></div>
-</div>
-<div class="container" id="salva">
-    <span id="carregando"></span><img id="completado" src="" />
-</div>
+    <div class="container" id="previa">
+        <div id="results"></div>
+    </div>
+    <div class="container" id="salva">
+        <span id="carregando"></span><img id="completado" src="" />
+    </div>*@
 
 
 
@@ -46,17 +66,14 @@
                     data: { uriFoto: data_uri },
                     success: function (response) {
                         document.getElementById('results').innerHTML = response;
+
                  },
                     error: function () {
                         alert("Erro!");
                  },
-                 complete: function () {
-                     
-                 }
+                    complete: function () {
+                    }
              })
-
-                //document.getElementById('results').innerHTML = '<img id="base64image" src="' + data_uri + '"/><button onclick="salvar_foto();">Upload desta Foto</button>';
-
                 $("#camera").empty();
             });
         }
@@ -79,5 +96,6 @@
         $(document).ready(function () {
             mostrar_camera();
         });
+
     </script>
 }

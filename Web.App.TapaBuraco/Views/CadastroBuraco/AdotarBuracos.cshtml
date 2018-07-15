@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Web.App.TapaBuraco.Models.Buraco>
+
+@{
+    ViewBag.Title = "AdotarBuracos";
+    var rua = Model.First().Rua;
+    var bairro = Model.First().Bairro;
+}
+
+<h2>Adotar Buracos</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UriFoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resolvido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdEmpresa)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rua)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UriFoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resolvido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpresa)
+            </td>
+            <td></td>
+        </tr>
+    }
+
+</table>
+
+
+<div class="form-group">
+    <div class="col-md-12">
+        @using (Html.BeginForm("AdotarBuraco", "CadastroBuraco", FormMethod.Post))
+        {
+            @Html.Hidden("rua", rua);
+            @Html.Hidden("bairro", bairro);
+            @Html.DropDownList("Empresa", (SelectList) ViewBag.Empresa, "Selecione uma empresa", new {@class = "form-control", @id = "dropFuncao"})
+            <button type="submit" class="btn btn-default">Adotar</button>
+        }
+    </div>
+</div>

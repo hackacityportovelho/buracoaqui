@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -28,5 +29,8 @@ namespace Web.App.TapaBuraco.Models
         public string Longitude { get; set; }
         public string Latitude { get; set; }
         public string UriFoto { get; set; }
+        public bool Resolvido { get; set; }
+        public Guid? IdEmpresa { get; set; }
+
     }
 }
