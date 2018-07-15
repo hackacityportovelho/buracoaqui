@@ -30,7 +30,7 @@ namespace Web.App.TapaBuraco.Models
                 .Configure(p => p.HasColumnType("varchar"));
 
             modelBuilder.Properties<string>()
-                .Configure(p => p.HasMaxLength(250));
+    .Configure(p => p.HasMaxLength(250));
 
             base.OnModelCreating(modelBuilder);
         }

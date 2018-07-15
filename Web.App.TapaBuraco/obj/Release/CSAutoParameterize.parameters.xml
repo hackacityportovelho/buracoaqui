@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Data Source=alexrochaf.database.windows.net;Initial Catalog=hackacity;Persist Security Info=True;User ID=alexrochaf;Password=alex@1994" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hudson-PC\\Documents\\Projetos\ Pessoais\\buracoaqui\\Web\.App\.TapaBuraco\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-</parameters>
