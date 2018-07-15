@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -32,10 +33,38 @@ namespace Web.App.TapaBuraco.Controllers
 
         public ActionResult VisualizarDetalhes(Guid empresaId)
         {
+            var empresa = db.Empresa.FirstOrDefault(e=>e.Id == empresaId);
+
+            //var lista = empresa.RepresentantecCollection(
+            //dados da empresa
+            ViewBag.Empresanome = empresa.RazaoSocial;
+            ViewBag.Cnpj = empresa.Cnpj;
+            ViewBag.Endereco = empresa.Endereco;
+
+            ViewBag.Cep = empresa.Cep;
+            //dados do representante
+            ViewBag.Cargo = "";
+            ViewBag.NomeEmpresario = "";
+            ViewBag.Cpf = "";
+            ViewBag.Rg = "";
+            //lista de buracos adotados
+
+            return View("RequerimentoEmpresaPDF");
+
+        }
+
+        public ActionResult Aprovar(Guid empresaId)
+        {
+            var empresa = db.Empresa.FirstOrDefault(e => e.Id == empresaId);
 
 
-            return View();
+            ViewBag.Empresanome = empresa.RazaoSocial;
+            ViewBag.Cnpj = empresa.Cnpj;
+            ViewBag.Endereco = empresa.Endereco;
+            ViewBag.Numero = empresa.Numero;
+            ViewBag.Bairro = empresa.Bairro;
 
+            return View("AutorizacaoObraPrestadoraServico");
         }
     }
 }

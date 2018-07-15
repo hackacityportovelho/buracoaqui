@@ -332,8 +332,8 @@
     <Content Include="Views\CadastroBuraco\ListarBuracos.cshtml" />
     <Content Include="Views\CadastroBuraco\AdotarBuracos.cshtml" />
     <Content Include="Views\Shared\Mensagem.cshtml" />
-    <Content Include="Views\Empresa\RequerimentoEmpresaPDF.cshtml" />
-    <Content Include="Views\Empresa\AutorizacaoObraPrestadoraServico.cshtml" />
+    <Content Include="Views\Requerimento\RequerimentoEmpresaPDF.cshtml" />
+    <Content Include="Views\Requerimento\AutorizacaoObraPrestadoraServico.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
