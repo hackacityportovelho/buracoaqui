@@ -1,9 +1,17 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Web.App.TapaBuraco.Models
 {
     public class Representante
     {
+        public Representante()
+        {
+            Id = Guid.NewGuid();
+        }
+        [Key]
+        public Guid Id { get; set; }
         [DisplayName("Cargo")]
         public string Cargo { get; set; }
         [DisplayName("Nome")]

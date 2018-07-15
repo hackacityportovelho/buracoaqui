@@ -1,10 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Web.App.TapaBuraco.Models
 {
     public class Empresa
     {
+        public Empresa()
+        {
+            Id = Guid.NewGuid();
+        }
+        [Key]
+        public Guid Id { get; set; }
         [DisplayName("Razão sócial")]
         public string RazaoSocial { get; set; }
         [DisplayName("CNPJ")]

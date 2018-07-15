@@ -12,6 +12,7 @@ namespace Web.App.TapaBuraco.Models
         {
             Id = Guid.NewGuid();
         }
+        [Key]
         public Guid Id { get; set; }
         [Display(Name = "Descrição: (Opcional)")]
         public string Descricao { get; set; }
