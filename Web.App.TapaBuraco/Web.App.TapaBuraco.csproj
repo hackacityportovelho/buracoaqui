@@ -197,6 +197,7 @@
     <Compile Include="Controllers\EmpresaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PrefeituraController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +206,7 @@
     <Compile Include="Models\Empresa.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Prefeitura.cs" />
     <Compile Include="Models\Representante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -321,6 +323,7 @@
     <Content Include="Views\Empresa\EmpresasCadastradas.cshtml" />
     <Content Include="Views\Empresa\CadastroPrestadorServico.cshtml" />
     <Content Include="Views\Empresa\EmpresasPrestadoresDeServicoCadastradas.cshtml" />
+    <Content Include="Views\Prefeitura\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
