@@ -3,7 +3,7 @@
     ViewBag.Title = "Index";
 }
 
-@if (!Model.Any())
+@if (Model.Any())
 {
     foreach (var item in Model)
     {

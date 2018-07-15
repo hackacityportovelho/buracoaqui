@@ -21,7 +21,7 @@ namespace Web.App.TapaBuraco.Controllers
             {
                 item.BuracoCollection = db.Buraco.Where(b=>b.IdEmpresa == item.Id).ToList();
 
-                if (!item.BuracoCollection.Any())
+                if (item.BuracoCollection.Count != 0)
                 {
                     listaRetorno.Add(item);
                 }
