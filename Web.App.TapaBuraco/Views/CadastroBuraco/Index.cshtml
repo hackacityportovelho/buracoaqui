@@ -46,17 +46,14 @@
                     data: { uriFoto: data_uri },
                     success: function (response) {
                         document.getElementById('results').innerHTML = response;
+
                  },
                     error: function () {
                         alert("Erro!");
                  },
-                 complete: function () {
-                     
-                 }
+                    complete: function () {
+                    }
              })
-
-                //document.getElementById('results').innerHTML = '<img id="base64image" src="' + data_uri + '"/><button onclick="salvar_foto();">Upload desta Foto</button>';
-
                 $("#camera").empty();
             });
         }
@@ -79,5 +76,6 @@
         $(document).ready(function () {
             mostrar_camera();
         });
+
     </script>
 }
