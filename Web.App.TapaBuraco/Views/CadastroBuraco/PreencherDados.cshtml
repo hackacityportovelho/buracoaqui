@@ -4,6 +4,7 @@
 
     var uriImg = ViewBag.UriImg;
 }
+<div id="msgError"></div>
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -15,30 +16,75 @@
     <div class="card-body">
         @using (Html.BeginForm("PreencherDados", "CadastroBuraco", FormMethod.Post))
         {
-        <div class="form-row">
-            <div class="form-group clearfix">
-                @Html.LabelFor(model => model.Descricao, new { @class = "control-label" })
-                <div class="">
-                    @Html.TextAreaFor(model => model.Descricao, new { @class = "form-control " })
+            @Html.HiddenFor(model => model.Longitude)
+            @Html.HiddenFor(model => model.Latitude)
+            @Html.HiddenFor(model=>model.DataCadastro)
+            <div class="form-row">
+                <div class="form-group clearfix">
+                    @Html.LabelFor(model => model.Descricao, new { @class = "control-label" })
+                    <div class="">
+                        @Html.TextAreaFor(model => model.Descricao, new { @class = "form-control " })
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    @Html.LabelFor(model => model.Rua, new { @class = "control-label" })
+                    <div class="">
+                        @Html.TextBoxFor(model => model.Rua, new { @class = "form-control ", required = "required" })
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    @Html.LabelFor(model => model.Bairro, new { @class = "control-label" })
+                    <div class="">
+                        @Html.TextBoxFor(model => model.Bairro, new { @class = "form-control ", required = "required" })
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <a href="/" class="btn btn-danger">Cancelar</a>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
             </div>
-            <div class="form-group clearfix">
-                @Html.LabelFor(model => model.Rua, new { @class = "control-label" })
-                <div class="">
-                    @Html.TextBoxFor(model => model.Rua, new { @class = "form-control ", required = "required" })
-                </div>
-            </div>
-            <div class="form-group clearfix">
-                @Html.LabelFor(model => model.Bairro, new { @class = "control-label" })
-                <div class="">
-                    @Html.TextBoxFor(model => model.Bairro, new { @class = "form-control ", required = "required" })
-                </div>
-            </div>
-            <div class="form-group clearfix">
-                <button type="button" onclick="window.location.reload()" class="btn btn-danger">Cancelar</button>
-                <button type="submit" class="btn btn-success">Confirmar</button>
-            </div>
-        </div>
         }
     </div>
 </div>
+
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(PreencherGeolocalizacao, showError);
+            } else {
+
+                $('#msgError').append("<div class='alert alert-danger' role='alert'>" + "Navegador não suportado para capturar a localização" + "</div >");
+            }
+
+        })
+
+        function PreencherGeolocalizacao(position) {
+            $('#Longitude').val(position.coords.longitude);
+            $('#Latitude').val(position.coords.latitude);
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    $('#msgError').append("Usuário negou a solicitação de geolocalização");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    $('#msgError').append("As informações de localização estão indisponíveis.");
+                    break;
+                case error.TIMEOUT:
+                    $('#msgError').append("A solicitação para obter a localização do usuário atingiu o tempo limite.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    $('#msgError').append("Ocorreu um erro desconhecido.");
+                    break;
+            }
+        }
+    </script>
+}
+
+
+
+
+

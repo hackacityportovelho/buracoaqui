@@ -19,7 +19,7 @@ namespace Web.App.TapaBuraco.Controllers
 
         public ActionResult PreencherDados()
         {
-            
+            ViewBag.UriImg = TempData["uriFoto"];
             return View();
         }
 
@@ -28,6 +28,7 @@ namespace Web.App.TapaBuraco.Controllers
         {
 
             db.Buraco.Add(buraco);
+            db.SaveChanges();
 
             return View("Index");
         }
