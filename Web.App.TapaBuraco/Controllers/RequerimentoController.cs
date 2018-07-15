@@ -29,5 +29,13 @@ namespace Web.App.TapaBuraco.Controllers
 
             return View(listaRetorno);
         }
+
+        public ActionResult VisualizarDetalhes(Guid empresaId)
+        {
+
+
+            return View();
+
+        }
     }
 }
