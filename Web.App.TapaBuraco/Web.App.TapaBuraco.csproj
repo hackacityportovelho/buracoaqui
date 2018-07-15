@@ -326,6 +326,8 @@
     <Content Include="Views\Empresa\CadastroPrestadorServico.cshtml" />
     <Content Include="Views\Empresa\EmpresasPrestadoresDeServicoCadastradas.cshtml" />
     <Content Include="Views\Prefeitura\Cadastro.cshtml" />
+    <Content Include="Views\Empresa\RequerimentoEmpresaPDF.cshtml" />
+    <Content Include="Views\Empresa\AutorizacaoObraPrestadoraServico.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

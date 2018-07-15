@@ -54,5 +54,34 @@ namespace Web.App.TapaBuraco.Controllers
         {
             return View();
         }
+
+
+        public ActionResult AutorizacaoObraPrestadoraServico(Empresa empresa)
+        {
+            ViewBag.Empresanome = empresa.RazaoSocial;
+            ViewBag.Cnpj = empresa.Cnpj ;
+            ViewBag.Endereco = empresa.Endereco ;
+            ViewBag.Numero = empresa.Numero;
+            ViewBag.Bairro = empresa.Bairro;
+            return View();
+        }
+        public ActionResult RequerimentoEmpresaPDF(Empresa empresa , Representante representante)
+        {
+
+            //var lista = empresa.RepresentantecCollection(
+            //dados da empresa
+            ViewBag.Empresanome = empresa.RazaoSocial;
+            ViewBag.Cnpj = empresa.Cnpj ;
+            ViewBag.Endereco = empresa.Endereco ;
+           
+            ViewBag.Cep = empresa.Cep ;
+            //dados do representante
+            ViewBag.Cargo = representante.Cargo ;
+            ViewBag.NomeEmpresario = representante.Nome ;
+            ViewBag.Cpf = representante.Cpf ;
+            ViewBag.Rg = representante.Rg ;
+            //lista de buracos adotados
+            return View();
+        }
     }
 }

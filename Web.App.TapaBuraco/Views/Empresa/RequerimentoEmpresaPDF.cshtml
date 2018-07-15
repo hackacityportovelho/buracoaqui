@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "RequerimentoEmpresaPDF";
+}
+@{
+    string EmpresaNome = ViewBag.Empresanome;
+    string Cnpj = ViewBag.Cnpj;
+    string Endereco = ViewBag.Endereco;
+    string Cep = ViewBag.Cep;
+    string Cargo = ViewBag.Cargo;
+    string NomeEmpresario = ViewBag.NomeEmpresario;
+    string Cpf = ViewBag.Cpf;
+    string Rg = ViewBag.Rg;
+}
+<div class="panel">
+
+    <h3 class="text-center">REQUERIMENTO DE ADESÃO AO PROFIEMVA</h3>
+    <h4 class="text-center">(Programa Fiscal de Incentivo à Manutenção das Vias Asfálticas)</h4>
+                      
+</div>
+<br/>
+<form>
+<h5>Excelentíssimo Senhor</h5>
+ <h5>Hildon Chaves</h5><br/>
+    
+    
+    <h5> @Html.DisplayName(EmpresaNome) 
+    , empresa privada, portadora do CNPJ nº @Html.DisplayName(Cnpj), com estabelecimento
+    sede na  @Html.DisplayName(Endereco), deste Município de Porto Velho, representada neste ato pelo @Html.DisplayName(Cargo),
+    @Html.DisplayName(NomeEmpresario),portador do @Html.DisplayName(Cpf) e RG @Html.DisplayName(Rg) , Cep de numero
+    @Html.DisplayName(Cep), vem por meio deste para requerer o que segue :
+    </h5><br />
+    <h5>Considerando a publicação do Decreto Municipal nº 1234, de 14 de julho de 2018, que dispõe sobre a possibilidade de
+        adesão ao PROFIEMVA – Programa Fiscal de Incentivo à Manutenção das Vias Asfálticas, mediante contrapartida de isenção parcial 
+        na cobrança dos Impostos Sobre Serviço de Qualquer Natureza - ISSQN, vem manifestar interesse na adesão do programa para ADOÇÃO das
+        seguintes localizações afetadas:</h5>
+
+    <h5>Tendo em vista à necessidade de comprovação oneração junto à empresa licitada em tempo hábil para viabilizar efetivamente a efetiva realização 
+        do serviço, estou ciente de que devo realizar transferência ou depósito bancário na conta disposta a seguir nos valores acordados no Decreto Municipal
+        no prazo máximo de 10 (dez) dias úteis a contar da assinatura deste requerimento, realizando a protocolização do comprovante de pagamento junto à Prefeitura
+        Municipal no mesmo tempo hábil, sob pena do não cumprimento das obras por parte da empresa empreiteira e posterior responsabilização: BANCO DO BRASIL S/A, 
+        Agência: 1234-5, Conta Corrente: 12345-6, NOMEEMPREITEIRA.</h5> <br/><br/>
+    
+    
+    <h6>Nestes Termos,</h6>
+    <h6>Pede Deferimento.</h6><br/>
+    
+    
+    <h5 class="text-center"> <u > @Html.DisplayName(EmpresaNome)</u></h5>
+    <h5 class="text-center"> Empresa</h5>
+</form>
+    

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "AutorizacaoObraPrestadoraServico";
+}
+@{
+    string EmpresaNome = ViewBag.Empresanome;
+    string Cnpj = ViewBag.Cnpj;
+    string Endereco = ViewBag.Endereco;
+    string Numero = ViewBag.Numero;
+    string Bairro = ViewBag.Bairro;
+}
+<div class="panel">
+
+    <h3 class="text-center">AUTORIZAÇÃO DE REALIZAÇÃO DE OBRA PELO PROFIEMVA</h3>
+    <h4 class="text-center">(Programa Fiscal de Incentivo à Manutenção das Vias Asfálticas)</h4>
+    
+    
+</div>
+
+<form>
+<h5>À Empresa</h5>
+    <h5>@Html.DisplayName(EmpresaNome)</h5>
+    <h5>@Html.DisplayName(Endereco)</h5><br />
+    
+    <h5>A PREFEITURA MUNICIPAL DE PORTO VELHO, pessoa jurídica de direito público interno, portadora do 
+        CNPJ nº 5.903.125/0001-45, com estabelecimento sede na Rua Dom Pedro || , nº 826, bairro centro, deste Município de Porto Velho, 
+        representada neste ato pelo seu Prefeito Municipal Hildon de Lima Chaves, 
+        vem por meio deste para autorizar o que segue:</h5><br />
+    <h5>Tendo em vista que, segundo o PROFIEMVA, o pagamento pelas obras realizadas por esta empresa ficam a cargo das empresas
+        adotantes, em um prazo máximo de 10 (dez) dias úteis após a assinatura do Requerimento de Adesão ao PROFIEMVA, esta Prefeitura,
+        conforme dispõe o Decreto Municipal, estará isenta de quaisquer cobranças monetárias e, em caso de nenhuma manifestação a respeito, 
+        presumirá o depósito realizado pela empresa adotante como “realizado com sucesso”.</h5>
+
+
+
+    <h6>Atenciosamente</h6>
+    
+    <h5 class="text-center"> <u > ____________________</u></h5>
+    <h5 class="text-center">Hildon de Lima Chaves</h5>
+    <h5 class="text-center">Prefeito Municipal<h5/>
+</form>
+
