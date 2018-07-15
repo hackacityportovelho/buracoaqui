@@ -1,9 +1,17 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Web.App.TapaBuraco.Models
 {
     public class Prefeitura
     {
+        public Prefeitura()
+        {
+            Id = new Guid();
+        }
+        [Key]
+        public Guid Id { get; set; }
         [DisplayName("Prefeitura")]
         public string RazaoSocial { get; set; }
         [DisplayName("CNPJ")]

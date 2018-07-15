@@ -26,7 +26,8 @@ namespace Web.App.TapaBuraco.Models
         public string Cpf { get; set; }
         [DisplayName("RG")]
         public string Rg { get; set; }
+        public Guid IdEmpresa { get; set; }
 
-        public Empresa Empresa { get; set; }
+        public virtual Empresa Empresa { get; set; }
     }
 }

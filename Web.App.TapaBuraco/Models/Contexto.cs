@@ -16,6 +16,8 @@ namespace Web.App.TapaBuraco.Models
         }
         public DbSet<Buraco> Buraco { get; set; }
         public DbSet<Empresa> Empresa { get; set; }
+        public DbSet<Prefeitura> Prefeitura { get; set; }
+        public DbSet<Representante> Representante { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
