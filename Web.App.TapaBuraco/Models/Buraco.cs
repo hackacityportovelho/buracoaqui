@@ -12,6 +12,7 @@ namespace Web.App.TapaBuraco.Models
         {
             Id = Guid.NewGuid();
             DataCadastro = new DateTime();
+            ProblemaResolvido = false;
         }
         [Key]
         public Guid Id { get; set; }
@@ -27,5 +28,6 @@ namespace Web.App.TapaBuraco.Models
         public string Longitude { get; set; }
         public string Latitude { get; set; }
         public string UriFoto { get; set; }
+        public bool ProblemaResolvido { get; set; }
     }
 }

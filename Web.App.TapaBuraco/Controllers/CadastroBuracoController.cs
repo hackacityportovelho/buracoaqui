@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using Web.App.TapaBuraco.Models;
 
 namespace Web.App.TapaBuraco.Controllers
@@ -34,6 +35,12 @@ namespace Web.App.TapaBuraco.Controllers
             ViewBag.UriImg = uriFoto;
 
             return PartialView("_ConfirmarFoto");
+        }
+
+        public ActionResult ListarBuracos()
+        {
+
+            return View();
         }
     }
 }
