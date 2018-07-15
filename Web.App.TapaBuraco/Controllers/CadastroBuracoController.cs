@@ -59,9 +59,7 @@ namespace Web.App.TapaBuraco.Controllers
 
         public ActionResult ListarBuracos()
         {
-            var lista = db.Buraco.Where(x => x.Resolvido == false).OrderBy(x => x.Bairro).ToList();
-           // var lista2 = lista.GroupBy(x => x.Bairro).ToList();
-            //var lista3 = lista2;
+            var lista = db.Buraco.Where(x => x.Resolvido == false && x.IdEmpresa == null).OrderBy(x => x.Bairro).ToList();
             return View("ListarBuracos",lista);
         }
 
