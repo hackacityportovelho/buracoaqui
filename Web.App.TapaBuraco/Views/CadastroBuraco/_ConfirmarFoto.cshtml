@@ -5,13 +5,16 @@
 }
 
 
-@using (Html.BeginForm("PreencherDados", "CadastroBuraco", FormMethod.Get))
+@using (Html.BeginForm("Upload", "CadastroBuraco", FormMethod.Post, new { enctype = "multipart/form-data" , @id="FormIMG"}))
 {
 <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="@uriFoto" alt="Foto Buraco">
+    <div class="img1">
+        <img class="card-img-top" src="@uriFoto" alt="Foto Buraco" id="foto">
+    </div>
     <div class="card-body">
         <div class="form-row">
-            <div class="form-group clearfix">
+            <div id="fotoResult" class="form-group clearfix">
+                <input type="file" name="file" value="@uriFoto"/>
             </div>
             <div class="form-group clearfix">
                 <button type="button" onclick="window.location.reload()" class="btn btn-danger">Cancelar</button>
