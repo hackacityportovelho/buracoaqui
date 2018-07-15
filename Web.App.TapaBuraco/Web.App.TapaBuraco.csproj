@@ -328,6 +328,9 @@
     <Content Include="Views\Empresa\EmpresasPrestadoresDeServicoCadastradas.cshtml" />
     <Content Include="Views\Prefeitura\Cadastro.cshtml" />
     <Content Include="Views\Requerimento\Index.cshtml" />
+    <Content Include="Views\CadastroBuraco\ListarBuracos.cshtml" />
+    <Content Include="Views\CadastroBuraco\AdotarBuracos.cshtml" />
+    <Content Include="Views\Shared\Mensagem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

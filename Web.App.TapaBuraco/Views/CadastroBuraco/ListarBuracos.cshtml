@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Web.App.TapaBuraco.Models.Buraco>
+
+@{
+    ViewBag.Title = "ListarBuracos";
+    var rua = Model.First().Rua;
+    var bairro = Model.First().Bairro;
+    int contador = 0;
+    var print = true;
+}
+
+<h2>ListarBuracos</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resolvido)
+        </th>
+        <th></th>
+    </tr>
+    
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        if (i == Model.Count() - 1)
+        {
+            contador = contador + 1;
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).DataCadastro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Rua)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Bairro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Longitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Latitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ElementAt(i).Resolvido)
+                </td>
+                <td>
+                    @using (Html.BeginForm("Detalhes", "CadastroBuraco", FormMethod.Post))
+                    {
+                        @Html.HiddenFor(modelItem => Model.ElementAt(i).Rua)
+                        @Html.HiddenFor(modelItem => Model.ElementAt(i).Bairro)
+                        <button type="submit" class="btn btn-default">Exibir detalhes</button>
+                    }
+                </td>
+            </tr>
+        }
+        else
+        {
+            if (!(Model.ElementAt(i).Rua == Model.ElementAt(i + 1).Rua && Model.ElementAt(i).Bairro == Model.ElementAt(i + 1).Bairro))
+            {
+                contador = contador + 1;
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).DataCadastro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Rua)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Bairro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Longitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Latitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.ElementAt(i).Resolvido)
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("Detalhes", "CadastroBuraco", FormMethod.Post))
+                        {
+                            @Html.HiddenFor(modelItem => Model.ElementAt(i).Rua)
+                            @Html.HiddenFor(modelItem => Model.ElementAt(i).Bairro)
+                            <button type="submit" class="btn btn-default">Exibir detalhes</button>
+                        }
+                    </td>
+                </tr>
+            }
+            else
+            {
+                contador = contador + 1;
+            }
+        }
+    }
+   
+</table>
