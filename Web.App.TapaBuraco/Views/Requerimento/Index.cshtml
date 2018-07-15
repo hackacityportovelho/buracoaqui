@@ -12,20 +12,35 @@
                 Empresa: @item.RazaoSocial
             </div>
             <div class="card-body">
-                <p>Lista de Buracos:</p>
-                <ul class="list-unstyled">
-                    @foreach (var buraco in item.BuracoCollection)
-                    {
-                        <li class="media">
-                            <img class="mr-3" src="~/Upload/@buraco.UriFoto" width="64" height="64" alt="Generic placeholder image">
-                            <div class="media-body">
-                                <p><b>Rua:</b> @buraco.Rua</p>
-                                <p><b>Bairro: </b>@buraco.Bairro</p>
-                            </div>
-                        </li>
-                        <p></p>
-                    }
-                </ul>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Detalhes</th>
+                            <th scope="col">#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var buraco in item.BuracoCollection)
+                        {
+                            <tr>
+                                <th scope="row"><img class="mr-3" src="~/Upload/@buraco.UriFoto" width="64" height="64" alt="Generic placeholder image"></th>
+                                <td>
+                                    <p><b>Rua:</b> @buraco.Rua</p>
+                                    <p><b>Bairro: </b>@buraco.Bairro</p>
+                                </td>
+                                <td>
+                                    <a class="btn btn-primary" target="_blank" href="@Url.Action("VisualizarDetalhes","Requerimento", new { empresaId = item.Id })">
+                                    <i class="fa fa-search" aria-hidden="true"></i> </a>
+                                <a class="btn btn-success" target="_blank" href="@Url.Action("Aprovar","Requerimento", new {empresaId = item.Id })">
+                                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <ul class="list-unstyled"></ul>
             </div>
         </div>
     }

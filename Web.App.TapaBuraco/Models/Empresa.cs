@@ -31,7 +31,8 @@ namespace Web.App.TapaBuraco.Models
         [DisplayName("Prestador de serviço")]
         public bool PrestadorDeServico { get; set; }
 
-        public ICollection<Representante> RepresentantecCollection { get; set; }
+        [NotMapped]
+        public Representante Representante { get; set; }
 
         [NotMapped]
         public ICollection<Buraco> BuracoCollection { get; set; }

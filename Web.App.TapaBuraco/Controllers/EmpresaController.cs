@@ -21,6 +21,8 @@ namespace Web.App.TapaBuraco.Controllers
             {
                 empresa.PrestadorDeServico = false;
                 dbContexto.Empresa.Add(empresa);
+                empresa.Representante.IdEmpresa = empresa.Id;
+                dbContexto.Representante.Add(empresa.Representante);
                 dbContexto.SaveChanges();
                 return RedirectToAction("EmpresasCadastradas");
             }
@@ -49,6 +51,8 @@ namespace Web.App.TapaBuraco.Controllers
             {
                 empresaPrestadoraDeServico.PrestadorDeServico = true;
                 dbContexto.Empresa.Add(empresaPrestadoraDeServico);
+                empresaPrestadoraDeServico.Representante.IdEmpresa = empresaPrestadoraDeServico.Id;
+                dbContexto.Representante.Add(empresaPrestadoraDeServico.Representante);
                 dbContexto.SaveChanges();
                 return RedirectToAction("EmpresasPrestadoresDeServicoCadastradas");
             }
