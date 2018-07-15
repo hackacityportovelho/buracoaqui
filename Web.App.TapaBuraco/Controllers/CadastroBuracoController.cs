@@ -19,7 +19,6 @@ namespace Web.App.TapaBuraco.Controllers
 
         public ActionResult PreencherDados()
         {
-            
 
             ViewBag.UriImg = TempData["uriFoto"];
             TempData.Keep("uriFoto");

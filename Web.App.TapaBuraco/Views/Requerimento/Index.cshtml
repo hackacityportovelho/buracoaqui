@@ -12,17 +12,18 @@
                 Empresa: @item.RazaoSocial
             </div>
             <div class="card-body">
-                <b>Lista de Buracos:</b>
+                <p>Lista de Buracos:</p>
                 <ul class="list-unstyled">
                     @foreach (var buraco in item.BuracoCollection)
                     {
                         <li class="media">
-                            <img class="mr-3" src="~/Upload/@buraco.UriFoto" alt="Generic placeholder image">
+                            <img class="mr-3" src="~/Upload/@buraco.UriFoto" width="64" height="64" alt="Generic placeholder image">
                             <div class="media-body">
-                                <b>Rua: @buraco.Rua</b>
-                                <b>Bairro: @buraco.Bairro</b>
+                                <p><b>Rua:</b> @buraco.Rua</p>
+                                <p><b>Bairro: </b>@buraco.Bairro</p>
                             </div>
                         </li>
+                        <p></p>
                     }
                 </ul>
             </div>
