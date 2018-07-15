@@ -1,0 +1,69 @@
+﻿LICENÇA DE DIREITOS AUTORAIS PROPRIETÁRIOS
+Versão 1, 14 de julho de 2018
+Direitos Autorais (C) 2018 - HackacityPhoenix
+
+--
+
+Ao exercer os Direitos Licenciados (definidos abaixo), você aceita e concorda estar sujeito aos termos e condições desta Licença de Direitos Autorais Proprietários. Na medida em que esta Licença possa ser interpretada como um contrato, você recebe os Direitos Licenciados em contrapartida pela sua aceitação destes termos e condições, e o Licenciante concede-Lhe tais direitos em contrapartida pelos benefícios que o Licenciante recebe por disponibilizar o Material Licenciado sob estes termos e condições.
+
+--
+
+1. GERAL
+Este software, sua documentação e quaisquer fontes ou imagens acompanhando esta licença, virtual ou fisícamente, em qualquer container de dados existente, estão licensiadas (e não vendidas) a você pela HackacityPhoenix para uso dentro dos termos desta licença, reservando-se a HackacityPhoenix na posse dos direitos não expressamente garantidos a você por este documento. Estes direitos garantidos, logo então nesta Licença estão limitados aos direitos de propriedade intelectual da HackacityPhoenix sobre o software BuracoAqui e não incluem quaisquer outras patentes ou direitos de propriedade intelectual. Você detém a forma pela qual BuracoAqui é distribuído, porém HackacityPhoenix ou quaisquer distribuidores oficiais autorizados da HackacityPhoenix detém a propriedade do software.
+
+
+2. DAS PERMISSÕES E RESTRIÇÕES DA LICENÇA
+Esta Licença lhe permite instalar e usar (1) cópia do software em um único computador ao mesmo tempo. Esta Licença não permite que o software exista em mais de um dispositivo ou computador ao mesmo tempo, sendo que você não pode disponibilizar o software através de uma rede compartilhada de computadores onde ele poderia ser utilizado por múltiplos dispositivos ou múltiplos computadores ao mesmo tempo.
+Você pode realizar uma cópia do software em formato legível em computadores apenas para fins de backup, desde que esta cópia em backup inclua todas as marcas registradas, licenças e outras informações de propriedade contidas no original.
+A menos que expressamente e unicamente da forma disposta nesta Licença, você não poderá copiar, decompilar, realizar engenharia reserva, desmantelar, tentar decodificar o código-fonte, modificar ou criar trabalhos derivados do software ou qualquer parte integrante dele. Qualquer tentativa de o fazer resultará em uma violação sumária dos direitos de propriedade intelectual da HackacityPhoenix e seu distribuidores oficiais.
+Caso você quebre esta restrição, poderá sofrer representação judicial por danos morais e intelectuais, conforme disposto no ordenamento jurídico vigente ou aquele à data de aquisição (qual for mais benéfico na proteção dos direitos de propriedade intelectual da HackacityPhoenix) ESTE SOFTWARE NÃO PODERÁ SER UTILIZADO DE FORMA QUE FALHA NO SISTEMA POSSA CAUSAR MORTE, LESÃO CORPORAL OU SEVERO DANO AMBIENTAL.
+
+
+3. DA TRANSFERÊNCIA
+Você não poderá alugar, emprestar ou sublicenciar este software. Você poderá, porém, realizar uma única transferência permanente de todos os seus direitos de licença sobre este software para outra pessoa física ou jurídica, desde que:
+(a) a transferência inclua todos os softwares, seus componentes, mídias originais e materiais impressos de licenciamento;
+(b) você não retenha quaisquer cópias do software, integral ou parcialmente, inclusive cópias salvas em computadores ou dispositivos de armazenamento; e
+(c) a parte recipiente leia e concorde com os termos e condições desta Licença.
+
+
+4. DA EXTINÇÃO.
+Está Licença terá vigência por tempo indeterminado até ser extinta. Seus direitos dentro desta Licença para com a HackacityPhoenix serão revogados automaticamente e sem aviso prévio caso você descumpra quaisquer dos termos presentes nesta Licença.
+
+
+5. DA GARANTIA LIMITADA SOBRE A MÍDIA
+A HackacityPhoenix garante que a mídia na qual o software é gravado e distribuido pela HackacityPhoenix estará livre de defeitos materiais e funcionais mediante uso normal, por um período de 90 (noventa) dias da data da compra em varejo. Seu recurso exclusivo dentro desta seção será, à rigor da HackacityPhoenix, oferecer devolução do valor pago pelo produto defeituoso contendo o software ou substituir o software devolvido à HackacityPhoenix com uma cópia com as mesmas garantias de uso originais. ESTA GARANTIA LIMITADA E QUAISQUER GARANTIAS IMPLÍCITAS SOBRE A MÍDIA, INCLUÍNDO, MAS NÃO LIMITADA, ÀS GARANTIAS IMPLÍCITAS DE MERCABILIDADE E USABILIDADE PARA FINS PESSOAIS, ESTÃO LIMITADAS À DURAÇÃO DE 90 (NOVENTA) DIAS DA DATA DA COMPRA EM VAREJO. A GARANTIA LIMITADA OFERECIDA NESTE DOCUMENTO É A ÚNICA GARANTIA FEITA À VOCÊ PELA HackacityPhoenix E É OFERECIDA EM SUBSTITUIÇÃO A QUAISQUER OUTRAS GARANTIAS CRIADAS POR REDISTRIBUIÇÃO POR DISTRIBUIDORES OFICIAIS. ESTA GARANTIA LIMITADA NÃO SOBREPÕE QUAISQUER DIREITOS GARANTIDOS À VOCÊ PELO ORDENAMENTO JURÍDICO VIGENTE EM SEU PAÍS/ESTADO.
+
+
+6. DAS GARANTIAS GERAIS DO SOFTWARE.
+VOCÊ EXPRESSAMENTE RECONHECE E CONCORDA QUE O USO DESTE SOFTWARE ESTÁ SOB SEU EXCLUSIVO RISCO E QUE A EXPECTATIVA QUANTO À SATISFATÓRIA QUALIDADE, PERFORMANCE, PRECISÃO E ESFORÇO EXIGIDO ESTÃO UNICAMENTE SOB SUA ÉGIDE, EXCETO PELA GARANTIA LIMITADA SOBRE A MÍDIA MENCIONADA ACIMA E SOB A EXTENSÃO MÁXIMA EXIGIDA PELAS LEIS DA REPÚBLICA FEDERATIVA DO BRASIL, ESTE SOFTWARE É PROVIDO “COMO ESTÁ”, COM TODOS SEUS POSSÍVEIS DEFEITOS E SEM GARANTIA DE QUALQUER FORMA, EXPRESSA OU IMPLICITAMENTE, NO TOCANTE ÀS CONDIÇÕES ESPECIAIS DE COMÉRCIO OU TALHADAS PARA UM USO PARTICULAR. HÁ PLENO POSSIBILIDADE DE QUE O SOFTWARE NÃO ATENDA ÀS SUAS ESPECIFICAÇÕES, CONTENHA ERROS QUE OCASIONEM INTERRUPÇÃO OU QUE ESTE SOFTWARE SEJA CORRIGIDO DE OFÍCIO. NENHUMA INFORMAÇÃO ORAL OU ESCRITA DISPONIBILIZADA PELA HACKACITYPHOENIX E SEUS DISTRIBUIDORES OFICIAIS CRIA IMPLICITAMENTE UMA EMENDA A ESTA LICENÇA. CASO ESTE SOFTWARE SE MOSTRE DEFEITUOSO, VOCÊ ASSUMIRÁ TODAS AS DESPESAS NECESSÁRIAS COM MANUTENÇÃO, REPAROS E CORREÇÕES. ESTAS DISPOSIÇÕES SOMENTE SERÃO INTERPRETADAS DE MODO DIVERGENTE POR FORÇA DE LEI DA REPÚBLICA FEDERATIVA DO BRASIL QUE DISPONHA EM CONTRÁRIO.
+
+
+7. LIMITAÇÃO DE LEGITIMAÇÃO
+ATÉ A EXTENSÃO PERMITIDA PELA LEI, DE NENHUM MODO PODERÁ A HACKACITYPHOENIX E SEUS DISTRIBUIDORES OFICIAIS SEREM RESPONSABILIZADOS POR LESÕES CORPORAIS, OU QUALQUER DANO INCIDENTAL, ESPECIAL, INDIRETO OU CONSEQUENTE DE QUALQUER FORMA, INCLUINDO MAS NÃO LIMITADO À DANOS MATERIAIS POR PERDA DE LUCROS E/OU DADOS, INTERRUPÇÃO NA PRESTAÇÃO DO SERVIÇO DO USUÁRIO OU QUAISQUER OUTROS DANOS COMERCIAIS OU PERDAS QUE SURJAM ATRAVÉS DE SEU MAL-USO OU INABILIDADE NA OPERAÇÃO DO SOFTWARE, MESMO QUE NÃO TENHA SIDO INFORMADO DA POSSIBILIDADE DESTES DANOS. DE TODA SORTE, ESTAS DISPOSIÇÕES SOMENTE SERÃO INTERPRETADAS DE MODO DIVERGENTE POR FORÇA DE LEI DA REPÚBLICA FEDERATIVA DO BRASIL QUE DISPONHA EM CONTRÁRIO.
+
+
+8. REGRAMENTOS SOBRE EXPORTAÇÃO.
+Você não poderá utilizar, exportar ou reexportar este software exceto se expressamente autorizado pelas leis da República Federativa do Brasil e pelas leis nas quais o software está sendo obtido. Em específico, mas não adstrito a estes casos, este software não poderá ser exportado ou reexportado:
+(a) à países nos quais haja o Brasil imposto embargos de comercialização internacional;
+(b) à pessoas físicas, empresas privadas ou órgãos/entes públicos que estejam, por força de lei República Federativa do Brasil, impedidos de adquirir software desta natureza;
+Pelo uso deste software, você atesta e garante que não se enquadra nos casos acima previstos ou outros que possam surgir, sendo de sua inteira responsabilidade quaisquer efeitos ou sanções legais que o mal-uso possa acarretar.
+
+
+9. USO PARA FINS GOVERNAMENTAIS.
+Este software e sua documentação constituem-se legalmente em um "programa de computador", e portanto estão protegidos pelos argumentos da Lei nº 9.609, de 19 de fevereiro de 1998, que classifica programa de computador como "um conjunto organizado de instruções em linguagem natural ou codificada, contida em suporte físico de qualquer natureza, de emprego necessário em máquinas automáticas de tratamento da informação, dispositivos, instrumentos ou equipamentos periféricos, baseados em técnica digital ou análoga, para fazê-los funcionar de modo e para fins determinados". Deste modo, a aquisição da presente Licença por órgãos governamentais estará sujeita às normativas legais de aquisição às quais estes entes ou órgãos se submetem. De toda sorte, a Licença distribuída vigerá nos mesmos termos e condições presentes neste documento, não sendo passível de alteração implícita apenas pela diferença na natureza jurídica do licenciado.
+
+
+10. DAS LEIS APLICÁVEIS E ESCOLHA DE FORO.
+Esta licença será governada e construída de acordo com as leis vigentes da República Federativa do Brasil, e será regulamentada apenas pelas leis que dispõem sobre a regulamentação jurídica de contratos entre pessoas privadas, ou seja, sem deixar qualquer margem de obscuridade à cargo de leis não publicadas na República Federativa do Brasil. Esta licença não será governada pela Convenção das Nações Unidas para a Venda Internacional de Mercadorias, sendo sua aplicação neste caso expressamente vedada. Se, por qualquer razão, a corte competente para realizar o julgamento encontrar qualquer parte, integral ou parcialmente, impossível de aplicação, a parte não afetada desta Licença continuará a viger com efeitos integrais. Você concorda que o único foro competente para solucionar litígios sobre a aplicação desta Licença será o da Cidade de Porto Velho, estado-membro de Rondônia, da República Federativa do Brasil. Este parágrafo continuará a viger integralmente independente da extinção desta Licença.
+
+
+11. NOTIFICAÇÕES DE THIRD PARTY E CONDIÇÕES.
+O software poderá incluir ou utilizar software que esteja licenciado à terceiros, cujo código-fonte está disponível através de suas Licenças originais. HackacityPhoenix poderá realizar modificações a este código-fonte. Todas as licenças de terceiros para o código-fonte estarão incluídas como anexos à presente Licença e serão partes indivisíveis da Licença do presente software. Os termos dispostos na Licença de Terceiros serão total e invariavelmente aplicadas nas porções deste software que consistam na forma original ou modificada do código-fonte.
+
+
+12. DO ACORDO COMPLETO E EMENDA GOVERNANTE.
+Está Licença constitui todo o acordo entre as partes em respeito ao software aqui licenciado e sobrepõe quaisquer entendimentos retroativos ou contemporâneos sobre o assunto disposto. Nenhuma emenda ou modificação desta Licença será vinculante a menos que escrita e assinada pela HackacityPhoenix.
+
+--
+
+FIM DO DOCUMENTO
