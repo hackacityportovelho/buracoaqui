@@ -3,27 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Web.App.TapaBuraco.Models;
 
 namespace Web.App.TapaBuraco.Controllers
 {
     public class CadastroBuracoController : Controller
     {
+        private Contexto db = new Contexto();
+
         // GET: CadastroBuraco
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult PreencherDados(string uriFoto)
+        public ActionResult PreencherDados()
         {
             
             return View();
         }
 
         [HttpPost]
-        public ActionResult PreencherDados()
+        public ActionResult PreencherDados(Buraco buraco)
         {
 
+            db.Buraco.Add(buraco);
 
             return View("Index");
         }
