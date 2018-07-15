@@ -27,6 +27,8 @@ namespace Web.App.TapaBuraco.Models
         public string Bairro { get; set; }
         [DisplayName("CEP")]
         public string Cep { get; set; }
+        [DisplayName("Prestador de serviço")]
+        public bool PrestadorDeServico { get; set; }
 
         public ICollection<Representante> RepresentantecCollection { get; set; }
     }
