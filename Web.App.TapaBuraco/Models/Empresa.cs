@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web.App.TapaBuraco.Models
 {
@@ -31,5 +32,8 @@ namespace Web.App.TapaBuraco.Models
         public bool PrestadorDeServico { get; set; }
 
         public ICollection<Representante> RepresentantecCollection { get; set; }
+
+        [NotMapped]
+        public ICollection<Buraco> BuracoCollection { get; set; }
     }
 }

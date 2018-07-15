@@ -198,6 +198,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PrefeituraController.cs" />
+    <Compile Include="Controllers\RequerimentoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -326,6 +327,7 @@
     <Content Include="Views\Empresa\CadastroPrestadorServico.cshtml" />
     <Content Include="Views\Empresa\EmpresasPrestadoresDeServicoCadastradas.cshtml" />
     <Content Include="Views\Prefeitura\Cadastro.cshtml" />
+    <Content Include="Views\Requerimento\Index.cshtml" />
     <Content Include="Views\CadastroBuraco\ListarBuracos.cshtml" />
     <Content Include="Views\CadastroBuraco\AdotarBuracos.cshtml" />
     <Content Include="Views\Shared\Mensagem.cshtml" />
