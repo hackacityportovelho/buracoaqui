@@ -40,7 +40,9 @@ namespace Web.App.TapaBuraco.Controllers
 
         public ActionResult ListarBuracos()
         {
-
+            var lista = db.Buraco.Where(x => x.Resolvido == false).Select(x => x.Bairro).Distinct();
+           // var lista2 = lista.GroupBy(x => x.Bairro).ToList();
+            //var lista3 = lista2;
             return View();
         }
     }

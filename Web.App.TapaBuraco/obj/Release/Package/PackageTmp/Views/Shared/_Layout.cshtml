@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <title>@ViewBag.Title - HackacityPhoenix</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -22,21 +22,26 @@
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("About", "Home")">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("Contact", "Home")">Contato</a></li>
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("Index","CadastroBuraco")">Camera</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("Cadastro","Empresa")">Cadastrar Empresa</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("CadastroPrestadorServico","Empresa")">Cadastrar Prestador serviço</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("Cadastro","Prefeitura")">Prefeitura</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("ListarBuracos", "CadastroBuraco")">Visualizar buracos</a></li>
+
             </ul>
         </div>
     </nav>
-
-
-
+    <br />
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Buraco Aqui!!!</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

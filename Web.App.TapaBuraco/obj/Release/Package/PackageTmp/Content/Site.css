@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Adds : after labels */
+form label:after {
+    content: ":";
+}
+
+/* Adds * after required labels */
+form label.required:after {
+    content: "*";
+}
