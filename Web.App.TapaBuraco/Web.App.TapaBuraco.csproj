@@ -192,6 +192,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\asdfController.cs" />
     <Compile Include="Controllers\CadastroBuracoController.cs" />
     <Compile Include="Controllers\EmpresaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -317,9 +318,13 @@
     <Content Include="Views\CadastroBuraco\PreencherDados.cshtml" />
     <Content Include="Views\CadastroBuraco\_ConfirmarFoto.cshtml" />
     <Content Include="Views\Empresa\Cadastro.cshtml" />
+    <Content Include="Views\Empresa\EmpresasCadastradas.cshtml" />
+    <Content Include="Views\Empresa\CadastroPrestadorServico.cshtml" />
+    <Content Include="Views\Empresa\EmpresasPrestadoresDeServicoCadastradas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\asdf\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
